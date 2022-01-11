@@ -1,0 +1,310 @@
+/*Police*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.nav__link { 
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: darkgoldenrod;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 50%);
+    padding: 0px 10%;
+    min-height: 70px;
+    z-index: 2;
+}
+
+.nav__link li {
+    display: inline-block; 
+    margin-right: 45px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: white;
+    padding:6px 10px; 
+}
+
+.nav__link li a {  
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: black;
+    font-size: 0.7em;
+}
+
+.nav__link li:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.page {
+    flex: 1;
+}
+
+
+footer {
+    min-height: 70px;
+    font-size: 1.1em;
+    color: goldenrod;
+    background-color: #1d1d1d;
+    padding-top: 20px;
+    position: relative;
+}
+
+footer p, footer span {
+    color: goldenrod;
+    text-align: center;
+}
+
+.temperatureLondres { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 15px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/*ID*/
+#logo {
+    width: 110px;
+    cursor: pointer;
+}
+
+#welcome {
+    background: url("assets/welcome_image.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 600px;   
+    overflow: hidden;
+    z-index: 1;
+}
+
+#welcome h1{
+    color: white;
+    font-size: 1.9em;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(19, 17, 17, 0.52);
+    padding: 10px;
+}
+
+/*CLASS*/
+.template_page {
+    text-align: justify;
+    margin-top: 15px;
+    margin: 40px;
+}
+
+.template_page h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    color: goldenrod;
+}
+
+
+
+/*Page Royale Family*/
+
+.container_personnages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.personnage {
+    color: goldenrod;
+    text-align: center;
+    width: 400px;
+    margin: 30px;
+    background-color: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+}
+
+.personnage:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+  }
+
+.personnage img {
+    min-width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.date_naissance {
+    font-size: 0.7em;
+    display: block;
+}
+.picture {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/*Page Assets*/
+
+.tableau {
+    object-position: center; 
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+    margin: 135px auto;
+}
+
+.tableau td, th {
+    border: 1px goldenrod solid;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+/*Formulaire*/
+.formulaire {
+    margin: 80px; 
+    align-items: center;
+    margin-bottom: 135px;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em auto;
+}
+
+.input_sub button {
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0; 
+    cursor: pointer; color: white;
+    background-color: goldenrod;
+    margin: 15px auto;
+}
+
+.input_sub{
+    text-align: right;
+}
+
+label, input, span, button {
+    transition: all .0,3s;
+}
+
+ label span {
+    position: absolute;
+    transform: translate(10px, -15px);
+    cursor: text;
+    transform-origin: left top;
+}
+
+.input_form span{
+    transform: translate(10px, 35px);
+    cursor: text;
+    transform-origin: left top;
+}
+
+.input_form label{
+    transform: translate(10px, 15px);
+    cursor: text;
+    transform-origin: left top;
+}
+ 
+.input_form input, 
+.input_form textarea {
+    padding: 10px;
+    border: none; outline: none;
+    border-bottom: 2px solid grey;
+    resize: none;
+}
+
+button:focus, button:hover {
+    background-color: #d92027;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid goldenrod;
+}
+textarea:focus,
+textarea:not(:placeholder-shown) {
+    border-bottom: 2px solid goldenrod;
+}
+
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    color: goldenrod;
+    position: relative;
+    transform: translate(5px, 1px) scale(.8);
+    padding-left: 0;
+}
+
+textarea:not(:placeholder-shown) ~ span,
+textarea:focus ~ span {
+    color: goldenrod;
+    position: relative;
+    transform: translate(5px, 1px) scale(.8);
+    padding-left: 0;
+}
+
+#copy {
+    color: goldenrod;
+}
+
+
+
+/*Media*/
+@media all and (max-width: 900px){
+    header {display: flex; flex-direction: column; align-items: center;}
+    .nav__link { padding:5px 5px; margin-right: 5px;}
+}
+
+/*Media*/
+@media all and (max-width: 730px){
+    body {display: block;}
+    header {display: flex; flex-direction: column; align-items: center;}
+    .nav__link { display: flex; flex-direction: column; text-align: center; }
+    .nav__link li {margin: 2px;}
+    .formulaire {margin: 10px; align-items: center; }
+    .input_sub {margin-bottom: 190px;}
+    footer {display: flex; flex-direction: column;}
+    .temperatureLondres {position: initial; margin: auto;}
+
+}

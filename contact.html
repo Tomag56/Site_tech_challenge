@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="assets/logo-wild.png" alt="logo" title="Accueil" id="logo" />
+      </div>
+      <!-- Navigation Section-->
+      <nav>
+        <ul class="nav__link">
+          <li><a href="index.html">About</a></li>
+          <li><a href="royal-family.html">Royal Family</a></li>
+          <li><a href="assets.html">Royal Assets</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page">
+      <section class="template_page">
+        <h2>Contact the Royal Kingdom</h2>
+      </section>
+      <div class="formulaire">
+        <div class="input_form">
+          <input type="text" name="Nom" id="name_form" placeholder=" " />
+          <label for="name_form">Name</label>
+        </div>
+        <div class="input_form">
+          <input type="email" name="email" id="email" placeholder=" " />
+          <label for="email">Email</label>
+        </div>
+        <div class="input_form">
+          <textarea name="message" id="message" placeholder=" "></textarea>
+          <span>Message</span>
+        </div>
+        <div class="input_sub">
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>copyrigth©<span id="copy">XXXX</span></p>
+      <!-- Ville / Temperature -->
+      <div class="temperatureLondres">
+        <span id="ville">Londre</span>
+        <span id="temperature_label">xx.x</span> °C
+      </div>
+    </footer>
+
+    <!-- Connect the Javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
